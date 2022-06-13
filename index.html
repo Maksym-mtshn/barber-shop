@@ -4,67 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>barbershop</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- кастомні стилі  -->
+    <link rel="stylesheet" href="./css/styles.css " />
   </head>
   <body>
     <!-- Хедер -->
-    <header>
-      <a href="">
+    <header class="header">
+      <a class="link" class="header-logo" href="">
         <img
+          class="header-img"
           src="./image/footer/logo.svg"
           alt="Логотип BarrberShop"
           width="69"
           height="56"
         />
       </a>
-      <nav>
-        <ul>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Услуги и цены</a></li>
-          <li><a href="">Мастера</a></li>
-          <li><a href="">Контакты</a></li>
+      <nav class="header-nav">
+        <ul class="header-list list">
+          <li class="header-list-item">
+            <a class="header-link link" href="">О нас</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-link link" href="">Услуги и цены</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-link link" href="">Мастера</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-link link" href="">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <div>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
+      <div class="header-group">
+        <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
       </div>
-      <button type="button">онлайн-запись</button>
+      <button class="header-btn btn btn-mode-dark" type="button">онлайн-запись</button>
     </header>
     <!-- Унікальний контент -->
     <main>
       <!-- Секція Hero -->
-      <section>
-        <ul>
-          <li><a href=" ">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
+      <section class="hero">
+        <ul class="hero-list list">
+          <li class="hero-item"><a class="hero-link link socials-link" href="">Instagram</a></li>
+          <li class="hero-item"><a class="hero-link link socials-link" href="">Youtube</a></li>
         </ul>
-        <p lang="en">A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>
-          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
-          вкусом.
-        </p>
+        <p class="uppertitle uppertitle-mode-dark" lang="en">A hair salon for men in Kyiv</p>
+        <h1 class="main-tite">BarberShop</h1>
+        <p>Мы эксперты в модных мужс ких стрижках. Работаем быстро, осторожно и со вкусом.</p>
 
-        <ul>
+        <ul class="list">
           <li>slaid 1</li>
           <li>slaid 2</li>
           <li>slaid 3</li>
         </ul>
-        <ul>
+        <ul class="list">
           <li><button type="button">Назад</button></li>
           <li><button type="button">Вперед</button></li>
         </ul>
       </section>
       <!-- Секція about -->
-      <section>
-        <ul>
+      <section class="about">
+        <ul class="list">
           <li>
-            <img
-              src="./image/main/about/img-1.jpg"
-              alt="бритье"
-              width="270"
-              height="445"
-            />
+            <img src="./image/main/about/img-1.jpg" alt="бритье" width="270" height="445" />
           </li>
           <li>
             <img
@@ -76,29 +86,25 @@
           </li>
         </ul>
         <div>
-          <p>О НАС</p>
-          <h2>Лучший Барбершоп твоего города</h2>
+          <p class="uppertitle uppertitle-mode-light">О НАС</p>
+          <h2 class="section-title section-title-mode-light">Лучший Барбершоп твоего города</h2>
+          <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
           <p>
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
-            к нам.
-          </p>
-          <p>
-            Мы команда, которая никогда не останавливается на достигнутом и
-            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-            никогда не сможешь быть прежним. Мы команда, которая всегда с
-            клиентами "на одной волне". Поэтому, мы всегда готовы
-            усовершенствовать каждого, кто к нам приходит!
+            Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда
+            ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда,
+            которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
+            каждого, кто к нам приходит!
           </p>
           <button type="button">онлайн-запись</button>
         </div>
       </section>
       <!-- Секція price -->
-      <section>
-        <p>Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
-        <ul>
+      <section class="price">
+        <p class="uppertitle uppertitle-mode-dark">Проведи время в компании лучших мастеров</p>
+        <h2 class="section-title section-title-mode-dark">Услуги и цены</h2>
+        <ul class="list">
           <li>
-            <ul>
+            <ul class="list">
               <li>Мужская стрижка от 300 грн.</li>
               <li>Стрижка бороды от 200 грн.</li>
               <li>Стрижка усов от 200 грн.</li>
@@ -106,7 +112,7 @@
             </ul>
           </li>
           <li>
-            <ul>
+            <ul class="list">
               <li>Cтрижка у стажера от 50 грн.</li>
               <li>Стрижка под насадку от 200 грн.</li>
               <li>Детская стрижка (до 12 лет) от 300 грн.</li>
@@ -117,8 +123,8 @@
         <button type="button">онлайн-запись</button>
       </section>
       <!-- Секція benefist  -->
-      <section>
-        <ul>
+      <section class="benefist">
+        <ul class="list">
           <li>
             <p>600</p>
             <sub>&plus;</sub>
@@ -141,31 +147,27 @@
           </li>
         </ul>
         <div>
-          <p>старая традиционная школа</p>
-          <h2>Почему приходят именно к нам?</h2>
+          <p class="uppertitle uppertitle-mode-light">старая традиционная школа</p>
+          <h2 class="section-title section-title-mode-light">Почему приходят именно к нам?</h2>
           <p>
-            О нас говорят только хорошее. Но лучше 1 раз увидеть и
-            прочувствовать, чем 10 раз прочитать.
+            О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
+            прочитать.
           </p>
         </div>
       </section>
       <!-- Секція team  -->
-      <section>
-        <p>для настоящих ценителей атмосферы</p>
-        <h2>Наши мастера</h2>
-        <ul>
+      <section class="team">
+        <p class="uppertitle uppertitle-mode-light">для настоящих ценителей атмосферы</p>
+        <h2 class="section-title section-title-mode-light">Наши мастера</h2>
+        <ul class="list">
           <li>
-            <img
-              src="./image/main/team/img-1.jpg"
-              alt="фото-1"
-              width="370"
-              height="346"
-            />
+            <img src="./image/main/team/img-1.jpg" alt="фото-1" width="370" height="346" />
             <h3 lang="en">John Smith</h3>
             <p lang="en">Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -175,6 +177,7 @@
               </li>
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -184,6 +187,7 @@
               </li>
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -193,6 +197,7 @@
               </li>
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -203,17 +208,13 @@
             </ul>
           </li>
           <li>
-            <img
-              src="./image/main/team/img-2.jpg"
-              alt="фото-2"
-              width="370"
-              height="346"
-            />
+            <img src="./image/main/team/img-2.jpg" alt="фото-2" width="370" height="346" />
             <h3 lang="en">Michele Doe</h3>
             <p lang="en">Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -223,6 +224,7 @@
               </li>
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -232,6 +234,7 @@
               </li>
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -241,6 +244,7 @@
               </li>
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -251,17 +255,13 @@
             </ul>
           </li>
           <li>
-            <img
-              src="./image/main/team/img-3.jpg"
-              alt="фото-3"
-              width="370"
-              height="346"
-            />
+            <img src="./image/main/team/img-3.jpg" alt="фото-3" width="370" height="346" />
             <h3 lang="en">Alan Black</h3>
             <p lang="en">Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -271,6 +271,7 @@
               </li>
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -280,6 +281,7 @@
               </li>
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -289,6 +291,7 @@
               </li>
               <li>
                 <a
+                  class="link"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
@@ -301,10 +304,10 @@
         </ul>
       </section>
       <!-- Секція portfolio -->
-      <section>
-        <p>На латинском языке “барба” означает “борода”</p>
+      <section class="portfolio">
+        <p class="uppertitle uppertitle-mode-light">На латинском языке “барба” означает “борода”</p>
         <h2 hidden>Примеры работ</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./image/main/portfolio/rectangle-1.jpg"
@@ -340,24 +343,24 @@
         </ul>
       </section>
       <!-- contacts -->
-      <section>
+      <section class="contacts">
         <div>
-          <h2>Онлайн-запись</h2>
+          <h2 section-title section-title-mode-light>Онлайн-запись</h2>
           <form action=" "></form>
           <button type="button">отправить</button>
         </div>
         <div>
-          <h2>Контакты</h2>
+          <h2 section-title section-title-mode-light>Контакты</h2>
           <address>
-            <ul>
+            <ul class="list">
               <li>
-                <a href="https://goo.gl/maps/TmAg4ra5VmDT6oZH6 "
+                <a class="link" href="https://goo.gl/maps/TmAg4ra5VmDT6oZH6 "
                   >ул. Васильковая, 7А Киев, 08132
                 </a>
               </li>
-              <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+              <li><a class="link" href="tel:+380441111111">+38 044 111 11 11</a></li>
               <li>
-                <a href="mailto:barbershop@email.com ">barbershop@email.com</a>
+                <a class="link" href="mailto:barbershop@email.com ">barbershop@email.com</a>
               </li>
             </ul>
           </address>
@@ -372,16 +375,16 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer>
+    <footer class="footer">
       <p>&copy; Copyright 2020</p>
-      <ul>
+      <ul class="list">
         <li>
-          <a href="https://" target="_blank" rel="noopener noreferrer"
+          <a class="link socials-link" href="https://" target="_blank" rel="noopener noreferrer"
             >Instagram</a
           >
         </li>
         <li>
-          <a href="https:// " target="_blank" rel="noopener noreferrer"
+          <a class="link socials-link" href="https:// " target="_blank" rel="noopener noreferrer"
             >Youtube</a
           >
         </li>
